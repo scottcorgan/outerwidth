@@ -1,4 +1,4 @@
-var outerwidth = require('./index');
+var outerWidth = require('./index');
 var test = require('tape');
 var domify = require('domify');
 
@@ -8,7 +8,7 @@ test('calculates width with no padding, margin or border', function (t) {
   var div = domify('<div style="width:100px"></div>');
   document.body.appendChild(div);
   
-  t.equal(outerwidth(div), 100, 'calculated width');
+  t.equal(outerWidth(div), 100, 'calculated width');
   t.end();
 });
 
@@ -22,7 +22,7 @@ test('calculates width with padding and border, but no margin', function (t) {
   div.style.paddingRight = '10px';
   div.style.border = '1px solid #fff';
   
-  t.equal(outerwidth(div), 122, 'calculated width');
+  t.equal(outerWidth(div), 122, 'calculated width');
   t.end();
 });
 
@@ -38,7 +38,7 @@ test('calculates width with padding, border, and margin', function (t) {
   div.style.marginLeft = '10px',
   div.style.marginRight = '10px',
   
-  t.equal(outerwidth(div), 142, 'calculated width');
+  t.equal(outerWidth(div), 142, 'calculated width');
   t.end();
 });
 
@@ -55,6 +55,6 @@ test('calculates width with padding, border, and margin when box-sizing = border
   div.style.marginLeft = '10px',
   div.style.marginRight = '10px',
   
-  t.equal(outerwidth(div), 120, 'calculated width');
+  t.equal(outerWidth(div), 120, 'calculated width');
   t.end();
 });
