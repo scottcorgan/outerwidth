@@ -1,0 +1,26 @@
+{
+  "name": "outerwidth",
+  "version": "1.0.0",
+  "description": "Get an element's outerwidth, including padding, borders, and margin",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:scottcorgan/outerwidth.git"
+  },
+  "keywords": [
+    "jquery",
+    "width",
+    "margin",
+    "border",
+    "padding"
+  ],
+  "author": "Scott Corgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottcorgan/outerwidth/issues"
+  },
+  "homepage": "https://github.com/scottcorgan/outerwidth"
+}
